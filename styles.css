@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0px;
 }
 
@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    align-items: center;
 }
 
 img {
@@ -16,35 +17,36 @@ img {
     width: 85px;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-}
-
-a{
+nav a{
     color: #fff;
     text-decoration: none;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    padding-right: 6px;
 }
-#linkHome{
+nav{
+    margin-right: 15px;
+}
+
+nav a:not(:last-child){
+    border-right: solid 2px;
+}
+
+nav a:hover{
     text-decoration: underline;
 }
 
-nav {
-    margin: auto 30px;
-    font-family: 'Noto Serif', serif;
-}
-
 main{
-    margin: 50px 20px;
+    margin: 60px;
     justify-content: space-around;
     display: flex;
+
 }
 
 div{
     min-height:  200px;
     width: 200px;
     text-align: center;
-    padding-top: 30px;
     border-radius: 28px;
     font-family: 'Noto Serif', serif;
 }
